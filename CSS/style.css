@@ -1,0 +1,311 @@
+body{
+    background-color: #1e7085;
+    color: whitesmoke;
+    text-size-adjust: 16px;
+    padding: 2em;
+}
+
+
+
+/* class */
+
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+  }
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+.header {
+    padding: 2px;
+    text-align: left;
+}
+
+.main {
+    text-align:justify;
+    display: flex;
+    flex-direction: row;
+    order: 1;
+    padding: 2%;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    
+    
+}
+
+.main_item {
+    align-items: right;
+          
+}
+
+.footer {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+   background-color:#1e7085;
+   
+    
+}
+
+.aside-1 {
+    background:#1e7085;
+  }
+  
+.aside-2 {
+    background:#1e7085;
+  }
+
+
+/* primera regla media Query para 200px */
+
+  @media (min-width: 200px) {       
+    .main{
+        flex: 3 0px; 
+        flex-flow: row;
+    }
+
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+    
+    .logo{
+        width: 350px;        
+    }
+    .main-nav{
+        flex-direction: column;
+        
+    }      
+  }
+
+
+/* primera regla media Query para 480px */
+
+
+@media (min-width: 480px) {
+   
+    .main{
+        flex: 3 0px; 
+        flex-flow: column;
+    }
+
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+
+
+    .logo{
+        width: 450px;        
+    }
+    
+    .main-nav{
+        flex-direction: column;
+    }
+  }
+
+/* primera regla media Query para 768px */
+
+  @media (min-width: 768px) {
+    .main{
+        flex: 3 0px; 
+        flex-flow: column;
+        flex-direction: column;
+    }
+    
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+
+    .logo{
+        width: 550px;
+        
+    }
+
+    .main-nav{
+        flex-direction: row;
+    }
+      
+  }
+
+/* primera regla media Query para 1024px */ 
+  
+@media all and (min-width: 1024px) {
+    .main{
+        flex: 3 0px; 
+        flex-flow: column;
+        flex-direction: column;
+    }
+
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+
+    .logo{
+        width: 650px;
+        
+    }
+
+    .main-nav{
+        flex-direction: row;
+    }
+    
+  }
+
+
+
+
+.main-nav{
+    margin-top: 10px;
+    list-style: none;
+    padding: 5px;
+    display: flex;    
+    justify-content: space-around;
+    align-items: left;
+     
+}
+
+.main-nav_item{
+    display: inline-block;
+    font-style: italic;
+    padding: 5px;
+    
+}
+
+.main-nav_item a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding-left: 3%;
+    
+}
+
+.main-nav_item a:hover {
+    color: #f18080;
+    text-decoration: underline;
+}
+
+.titulosec {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-align: left;
+}
+
+.parrafo {
+    justify-content: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;    
+    
+        
+}
+
+.parrafo_formulario {
+    text-align: left;
+
+}
+
+.imagengrande {
+    width: 95%;
+}
+
+
+.flexbox {
+    margin-top: 10px;
+    list-style: none;
+    flex-flow: column;
+    padding: 5px;
+    display: flex;    
+    flex-direction: column wrap;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+.flexbox_caja1 {
+    order: 1;
+    padding: 2%;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: small;
+}
+
+.flexbox_caja2 {
+    background-color: #0d5162;
+    order: 2;
+    padding: 2%;
+    margin: 5px;
+    font-style: italic;
+    width: 98%;
+
+
+}
+
+.cajapodcast {
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* id */
+
+#tituloprincipal {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 4%;
+    width: 80%;
+   
+    
+}
+
+#encabezado {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    width: 80%;
+    
+}
+
+.logo {
+    align-items: center;
+    
+}
+
+
+
+
+#linkiv {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    
+        
+}
+
+#linkiv a{
+    color: whitesmoke;
+}
+
+#linkiv a:hover{
+    color: #b50a0a;
+    text-decoration: underline;
+}
+
